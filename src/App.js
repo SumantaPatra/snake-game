@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Snake from './components/snake';
 import { useEffect, useState } from 'react';
@@ -128,7 +128,7 @@ function App() {
     let head = snake[snake.length - 1];
     snake.pop();
     snake.forEach(dot => {
-      if (head[0] == dot[0] && head[1] == dot[1]) {
+      if (head[0] === dot[0] && head[1] === dot[1]) {
         gameOver();
       }
     });
